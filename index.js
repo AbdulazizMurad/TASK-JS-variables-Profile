@@ -10,11 +10,12 @@
  */
 
 // Part 1 answer 👇🏻 ...
-
-
-
-
-
+let fullName = "Abdulaziz Ali Murad";
+let yearOfBirth = 2001;
+let hobby = " gathering ";
+let funFact = " i used to hate coding";
+const image =
+  "https://www.springboard.com/blog/wp-content/uploads/2022/06/what-does-a-coder-do-2022-career-guide-1.jpg";
 
 /**
  * Part 2: String Interpolation
@@ -24,7 +25,7 @@
  * 1. fullNameString      -> assign it to: My name is {fullName}
  * 2. yearOfBirthString   -> assign it to: I am {YOUR_AGE}, and make sure you calculate your age from your year of birth
  * 3. hobbyString         -> assign it to: My hobby is {YOUR_HOBBY}
- * 
+ *
  * Uncomment the following lines and start interpolating.
  * You can uncomment a line by removing the // at the start
  */
@@ -33,9 +34,9 @@
 // const yearOfBirthString =
 // const hobbyString =
 
-
-
-
+let fullNameString = ` My Name is ${fullName}`;
+let yearOfBirthString = `I am ${2024 - yearOfBirth}`;
+const hobbyString = `My Hobby is ${hobby}`;
 /**
  * Part 3: Re-assignment
  * Increment your hacker score
@@ -44,15 +45,18 @@
 let stars = 0;
 
 function incrementBy1() {
-  // Increment stars by 1 👇🏻
+  stars++;
 }
 function decrementBy1() {
   // decrement stars by 1 👇🏻
+  stars--;
 }
 
 function incrementBy2() {
   // Increment stars by 2 👇🏻
+  stars = `${(stars += 2)}`;
 }
 function decrementBy2() {
   // decrement stars by 2 👇🏻
+  stars = `${(stars -= 2)}`;
 }

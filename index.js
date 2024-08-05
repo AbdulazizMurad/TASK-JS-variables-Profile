@@ -54,9 +54,9 @@ function decrementBy1() {
 
 function incrementBy2() {
   // Increment stars by 2 👇🏻
-  stars = `${(stars += 2)}`;
+  stars = stars + 2;
 }
 function decrementBy2() {
   // decrement stars by 2 👇🏻
-  stars = `${(stars -= 2)}`;
+  stars = stars - 2;
 }
